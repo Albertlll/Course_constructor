@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\fonts\Montserrat-SemiBold.ttf" />
+    <None Remove="src\img\bell.png" />
+    <None Remove="src\img\bell.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\fonts\Montserrat-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="src\img\bell.png" />
+    <Resource Include="src\img\bell.svg" />
+  </ItemGroup>
+
+</Project>

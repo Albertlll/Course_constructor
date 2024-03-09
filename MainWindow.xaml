@@ -1,0 +1,42 @@
+﻿<Window x:Class="Course_constructor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Course_constructor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" WindowStyle="ThreeDBorderWindow" WindowState="Maximized" WindowStartupLocation="CenterScreen"
+        >
+    <Window.Resources>
+        <CornerRadius x:Key="radius">100</CornerRadius>
+    </Window.Resources>
+    <DockPanel>
+        <Border BorderThickness="0,0,3,0" BorderBrush="#7F7F7F">
+            <StackPanel Name="navbar" DockPanel.Dock="Left" Width="352">
+
+            <DockPanel Margin="13,62,0,0" LastChildFill="False">
+                <Label DockPanel.Dock="Left" Background="#FFAAAAAA" Width="40" Height="40" Margin="0,0,0,0">
+                    <Label.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="100"></Setter>
+                        </Style>
+                    </Label.Resources>
+                </Label>
+                <Label Style="{StaticResource Montsrrat}" Content="Мурат" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+                <Image Source="{StaticResource bellDrawingImage}" Height="24" Width="24" DockPanel.Dock="Right" Margin="0,0,19.3,0">
+                </Image>
+            </DockPanel>
+            
+            <TextBox Margin="8,10,14,0" Height="45" Resources="{StaticResource textbox_res}"
+                     Background="#FFDDDDDD" BorderBrush="{x:Null}"
+                     TextChanged="TextBox_TextChanged" VerticalContentAlignment="Center" FontSize="18" />
+                
+            <Button Margin="8,9,14,10" Height="45" Resources="{StaticResource textbox_res}"
+                    Background="#FFD5D9FF" BorderBrush="{x:Null}"></Button>
+        </StackPanel>
+        </Border>
+        <WrapPanel>
+
+        </WrapPanel>
+    </DockPanel>
+</Window>

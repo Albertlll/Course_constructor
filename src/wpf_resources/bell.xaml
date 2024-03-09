@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DrawingImage x:Key="bellDrawingImage">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V24 H24 V0 H0 Z">
+                <GeometryDrawing Geometry="F1 M24,24z M0,0z M18,8C18,6.4087 17.3679,4.88258 16.2426,3.75736 15.1174,2.63214 13.5913,2 12,2 10.4087,2 8.88258,2.63214 7.75736,3.75736 6.63214,4.88258 6,6.4087 6,8 6,15 3,17 3,17L21,17C21,17,18,15,18,8z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FF000000" Thickness="2" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="1" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Geometry="F1 M24,24z M0,0z M13.7295,21C13.5537,21.3031 13.3014,21.5547 12.9978,21.7295 12.6941,21.9044 12.3499,21.9965 11.9995,21.9965 11.6492,21.9965 11.3049,21.9044 11.0013,21.7295 10.6977,21.5547 10.4453,21.3031 10.2695,21">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FF000000" Thickness="2" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" MiterLimit="1" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>
